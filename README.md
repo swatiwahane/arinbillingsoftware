@@ -1,112 +1,16 @@
-# 🚀 ARIN BILLBOT
+# React + Vite
 
-AI-powered billing and dashboard management system with automated backend and frontend startup.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## 📌 Features
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-✅ Automatic Python environment setup  
-✅ Automatic dependency installation  
-✅ FastAPI backend startup  
-✅ React/Vite frontend startup  
-✅ Local + Network access URLs  
-✅ Beginner-friendly one-click startup script  
+## React Compiler
 
----
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-⚙️ Prerequisites
+## Expanding the ESLint configuration
 
-Install the following software before running the project:
-
-🐍 Python
-
-Download Python:
-https://www.python.org/downloads/
-
-✔ Important: Enable "Add Python to PATH" during installation.
-
-🟢 Node.js
-
-Download Node.js:
-https://nodejs.org/
-
-🚀 Getting Started
-Step 1: Clone Repository
-git clone https://github.com/your-username/arin-billbot.git
-cd arin-billbot
-Step 2: Run Startup Script
-
-Simply double-click:
-
-startup.bat
-
-OR run from terminal:
-
-startup.bat
-🔥 What the Script Does
-Backend
-Creates virtual environment (.venv)
-Installs Python dependencies
-Starts FastAPI server
-
-Runs on:
-
-http://localhost:5000
-Frontend
-Installs npm dependencies if missing
-Starts React/Vite dashboard
-
-Runs on:
-
-http://localhost:5173
-🌐 Access URLs
-Local
-http://localhost:5173
-Network
-http://YOUR-IP:5173
-
-Example:
-
-http://192.168.1.5:5173
-
-🛠 Backend Command
-python -m uvicorn main:app --reload --host 0.0.0.0 --port 5000
-
-🧪 Frontend Command
-npm run dev -- --host
-
-⚠️ Notes
-Keep terminal windows open while using the application.
-First startup may take a few minutes depending on internet speed.
-If frontend does not load immediately, wait a few seconds and refresh the browser.
-
-❌ Common Errors
-Python Not Found
-
-Install Python and enable:
-
-Add Python to PATH
-Node.js Not Found
-
-Install latest Node.js version.
-
-Dependency Installation Failed
-
-Check:
-
-Internet connection
-Firewall restrictions
-Correct Python version
-🧰 Tech Stack
-Backend
-Python
-FastAPI
-Uvicorn
-Frontend
-React
-Vite
-Node.js
-👨‍💻 Developed By
-
-ARIN BILLBOT Team
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
