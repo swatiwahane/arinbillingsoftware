@@ -69,14 +69,18 @@ http://YOUR-IP:5173
 Example:
 
 http://192.168.1.5:5173
+
 🛠 Backend Command
 python -m uvicorn main:app --reload --host 0.0.0.0 --port 5000
+
 🧪 Frontend Command
 npm run dev -- --host
+
 ⚠️ Notes
 Keep terminal windows open while using the application.
 First startup may take a few minutes depending on internet speed.
 If frontend does not load immediately, wait a few seconds and refresh the browser.
+
 ❌ Common Errors
 Python Not Found
 
